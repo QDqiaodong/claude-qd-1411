@@ -8,3 +8,18 @@ dist/
 .DS_Store
 *.log
 .playwright-cli/
+
+# Solo snapshots never include credentials or local runtime state
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.key
+.claude/
+.codex/
+__pycache__/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
